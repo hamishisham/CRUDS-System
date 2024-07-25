@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cruds</title>
+</head>
+<body>
+
+    <h1 style="text-align: center">Students Of <span id="company">DEPI</span> </h1>
+
+    <div class="container">
+        <label for="studentName">Write Student Name:</label>
+        <input type="text" id="studentName">
+
+        <br>
+
+        <label for="studentMail">Write Student E-mail: </label>
+        <input type="email" id="studentMail" >
+
+        <br>
+
+        <label for="studentClass">Write Student Class: </label>
+        <input type="text" id="studentClass">
+        
+
+    </div>
+    
+
+    <button id="addStudent" onclick="addStudent()">Add New Student</button>
+
+    
+    
+    
+    
+    <div class="search">
+        <div class="searchTwo">
+            <input type="search" name="" id="searchInputN" placeholder="Search by name......">
+            <div class="or">Or</div>
+            <input type="search" name="" id="searchInputC" placeholder="Search by class......">
+
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student E-mail</th>
+                    <th>Student Class</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="showData">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
